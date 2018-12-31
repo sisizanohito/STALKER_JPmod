@@ -72,7 +72,7 @@ namespace xml2xls
                 topCell.Hyperlink = new XLHyperlink($"'{sheetName}'!A1");
                 topWorksheet.Cell(workbook.Worksheets.Count, 2).FormulaA1 = $"1-(COUNTBLANK('{sheetName}'!D3:D)/ROWS('{sheetName}'!D3:D))";
             }
-            workbook.SaveAs("Stalker日本語化.xlsx");
+            workbook.SaveAs("Stalker Anomaly日本語化.xlsx");
             
         }
 
