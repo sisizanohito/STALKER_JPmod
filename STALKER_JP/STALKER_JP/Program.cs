@@ -48,7 +48,7 @@ namespace STALKER_JP
                     xml = xml.Replace("[#]", "&");
 
                     string filename = worksheet.Cell("A1").Value.ToString();
-                    File.WriteAllText($@"./out/{filename}.xml", xml);
+                    File.WriteAllText($@"./gamedata/configs/text/eng/{filename}.xml", xml);
                 }
                 Console.WriteLine("終了-何かキーを押してください");
                 Console.ReadKey();
