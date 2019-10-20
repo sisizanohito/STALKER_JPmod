@@ -46,7 +46,7 @@ namespace STALKER_JP
                     serializer.Serialize(writer, ui_text, ns);
                     var xml = writer.ToString();
                     xml = xml.Replace("[#]", "&");
-
+                    xml = xml.Replace("•", "・");
                     string filename = worksheet.Cell("A1").Value.ToString();
                     File.WriteAllText($@"./gamedata/configs/text/jpn/{filename}.xml", xml);
                 }
